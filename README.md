@@ -1,22 +1,41 @@
-# Chris' personal website
+# Personal website and blog
 
-This is my personal website, built with Sphinx!
+This site is inspired by and copied from https://github.com/choldgraf/choldgraf.github.io.
 
-## Build and preview the docs
+## Building the site locally
 
-**Build the docs**. Use `nox`, which handles all of the environment generation automatically.
-To do so, follow these steps:
+The current [requirements.txt](requirements.txt) are known to work with Python 3.11.
 
-1. Install `nox`.
+### Using make
 
-   ```shell
-   pip install -U nox
-   ```
-2. Run `tox`
+Following the [deploy.yml](.github/workflows/deploy.yml) workflow by executing
 
-   ```shell
-   nox -s docs
-   ```
+```bash
+python3.11 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+make dirhtml
+```
 
-this should install a Sphinx environment and build the site, putting the output files in `_build/html`.
+should generate the site in `_build`, which can be opened with
+
+```bash
+xdg-open _build/dirhtml/index.html &
+```
+
+### Using nox
+
+We also ship a [noxfile.py](noxfile.py) to generate the site using [nox](https://github.com/wntrblm/nox) with
+
+```bash
+pipx nox -s docs  # omit pipx if you have nox installed
+```
+
+and to run a live web-server with
+
+```bash
+pipx nox -s docs -- live
+```
+
+which watches for local changes.
 
