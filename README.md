@@ -20,16 +20,3 @@ To do so, follow these steps:
 
 this should install a Sphinx environment and build the site, putting the output files in `_build/html`.
 
-## Execute and interact with the code
-
-**Run a live webserver**:
-
-```shell
-nox -s docs -- live
-```
-
-**Run a JupyterLab environment with necessary packages installed:
-
-```shell
-nox -s lab
-```
