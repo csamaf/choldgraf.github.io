@@ -12,10 +12,6 @@ I'm the Executive Director of [2i2c - the International Interactive Computing Co
 About me ℹ️
 :::
 :::{grid-item-card}
-:link: projects
-Projects I've worked on 🔧
-:::
-:::{grid-item-card}
 :link: blog
 My blog ✍️
 :::
@@ -33,7 +29,6 @@ My blog ✍️
 :maxdepth: 2
 :hidden:
 about
-projects
 publications
 blog
 ```

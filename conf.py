@@ -71,7 +71,6 @@ html_sidebars = {
     "index": ["hello.html"],
     "about": ["hello.html"],
     "publications": ["hello.html"],
-    "projects": ["hello.html"],
     "blog": ["ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
     "blog/**": ["ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
 }
