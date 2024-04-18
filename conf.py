@@ -3,7 +3,6 @@ import sys
 
 sys.path.append("scripts")
 sys.path.append(".")
-from social_media import add_social_media_js, SocialPost
 
 project = "Chris Holdgraf"
 copyright = "2022, Chris Holdgraf"
@@ -131,6 +130,4 @@ nb_execution_mode = "off"
 
 
 def setup(app):
-    app.add_directive("socialpost", SocialPost)
-    app.connect("html-page-context", add_social_media_js)
     app.add_css_file("custom.css")
