@@ -35,6 +35,5 @@ My blog ✍️
 about
 projects
 publications
-talks
 blog
 ```
