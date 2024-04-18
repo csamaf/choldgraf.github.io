@@ -28,13 +28,13 @@ xdg-open _build/dirhtml/index.html &
 We also ship a [noxfile.py](noxfile.py) to generate the site using [nox](https://github.com/wntrblm/nox) with
 
 ```bash
-pipx nox -s docs  # omit pipx if you have nox installed
+pipx run nox -s site  # omit pipx if you have nox installed
 ```
 
 and to run a live web-server with
 
 ```bash
-pipx nox -s docs -- live
+pipx run nox -s site -- live
 ```
 
 which watches for local changes.

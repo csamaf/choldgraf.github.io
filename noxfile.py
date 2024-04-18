@@ -6,7 +6,7 @@ nox.options.reuse_existing_virtualenvs = True
 
 
 @nox.session
-def docs(session):
+def site(session):
     session.install("-r", "requirements.txt")
     if "live" in session.posargs:
         session.run(
