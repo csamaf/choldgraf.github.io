@@ -4,9 +4,9 @@ import sys
 sys.path.append("scripts")
 sys.path.append(".")
 
-project = "Chris Holdgraf"
-copyright = "2022, Chris Holdgraf"
-author = "Chris Holdgraf"
+project = "CONF_PY_PROJECT"
+copyright = "CONF_PY_COPYRIGHT"
+author = "CONF_PY_AUTHOR"
 
 extensions = [
     "myst_nb",
@@ -35,35 +35,24 @@ exclude_patterns = [
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    "search_bar_text": "Search this site...",
-    "analytics": {"google_analytics_id": "UA-88310237-1"},
+    "search_bar_text": "Search this site ...",
+    "analytics": {"google_analytics_id": "CONF_PY_GOOGLE_ANALYTICS_ID"},
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/choldgraf/",
+            "url": "CONF_PY_GITHUB_URL",
             "icon": "fa-brands fa-github",
         },
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/choldgraf",
-            "icon": "fa-brands fa-twitter",
-        },
-        {
-            "name": "Mastodon",
-            "url": "https://hachyderm.io/@choldgraf",
-            "icon": "fa-brands fa-mastodon",
-            "attributes": {"rel": "me"},
-        },
-        {
             "name": "Blog RSS feed",
-            "url": "https://chrisholdgraf.com/blog/atom.xml",
+            "url": "CONF_PY_SITE_URL/blog/atom.xml",
             "icon": "fa-solid fa-rss",
         },
     ],
 }
 
-html_favicon = "_static/profile-color-circle-small.png"
-html_title = "Chris Holdgraf"
+html_favicon = "CONF_PY_HTML_FAVICON"
+html_title = "CONF_PY_HTML_TITLE"
 html_static_path = ["_static"]
 html_extra_path = ["feed.xml"]
 html_sidebars = {
@@ -74,16 +63,14 @@ html_sidebars = {
 }
 
 # OpenGraph config
-ogp_site_url = "https://chrisholdgraf.com"
+ogp_site_url = "CONF_PY_OPENGRAPH_SITE_URL"
 ogp_social_cards = {
     "line_color": "#4078c0",
-    "image": "_static/profile-color-circle.png",
+    "image": "CONF_PY_OPENGRAPH_IMAGE",
 }
 
 
-rediraffe_redirects = {
-    "rust-governance.md": "blog/2018/rust_governance.md",
-}
+rediraffe_redirects = {}
 # Update the posts/* section of the rediraffe redirects to find all files
 redirect_folders = {
     "posts": "blog",
@@ -102,12 +89,12 @@ for old, new in redirect_folders.items():
 
 # -- ABlog ---------------------------------------------------
 
-blog_baseurl = "https://chrisholdgraf.com"
-blog_title = "Chris Holdgraf"
+blog_baseurl = "CONF_PY_ABLOG_URL"
+blog_title = "CONF_PY_ABLOG_TITLE"
 blog_path = "blog"
 blog_post_pattern = "blog/*/*"
 blog_feed_fulltext = True
-blog_feed_subtitle = "Open communities, open science, communication, and data."
+blog_feed_subtitle = "CONF_PY_ABLOG_FEED_SUBTITLE"
 fontawesome_included = True
 post_redirect_refresh = 1
 post_auto_image = 1
