@@ -54,7 +54,6 @@ html_theme_options = {
 html_favicon = "CONF_PY_HTML_FAVICON"
 html_title = "CONF_PY_HTML_TITLE"
 html_static_path = ["_static"]
-html_extra_path = ["feed.xml"]
 html_sidebars = {
     "index": ["hello.html"],
     "about": ["hello.html"],
