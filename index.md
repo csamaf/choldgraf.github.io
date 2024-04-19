@@ -29,6 +29,5 @@ My blog ✍️
 :maxdepth: 2
 :hidden:
 about
-publications
 blog
 ```

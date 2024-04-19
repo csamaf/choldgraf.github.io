@@ -33,9 +33,3 @@ nox -s docs -- live
 ```shell
 nox -s lab
 ```
-
-## Update my publications
-
-The script in `scripts/orcid-publications.py` will use [the ORCID APi](https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/) to download all of the records associated with my ORCID account.
-
-It generates some markdown that is then inserted into my documentation in `publications.md`.
