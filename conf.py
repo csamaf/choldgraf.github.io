@@ -18,7 +18,7 @@ extensions = [
     "sphinxext.rediraffe",
 ]
 
-templates_path = ["_templates"]
+templates_path = ["templates"]
 exclude_patterns = [
     "_build",
     "Thumbs.db",
